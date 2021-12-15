@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <title>Gym Academy</title>
   </head>
+
   <body>
     <!-- Start Nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-black">
@@ -66,14 +67,20 @@
     </nav>
     <!-- End Nav -->
     <!-- Start Landing -->
-    <section class="container-fluid landing position-relative mb-5">
+    <section class="container-fluid landing position-relative mb-5 bg-black">
       <div class="row">
-        <video src="VIDEOS/background.mp4" autoplay loop></video>
+        <video id="vid" loop autoplay>
+          <source src="VIDEOS/background.mp4" type="video/mp4" />
+        </video>
+        <script>
+          document.getElementById("vid").play();
+        </script>
+        <!-- <video src="VIDEOS/background.mp4" autoplay loop></video> -->
       </div>
 
       <div class="row">
         <div class="center col-12">
-          <div class="m-auto fs-2">
+          <div class="m-auto fs-3">
             <h2 class="fw-light text-center text-light">
               HARD WORK, GET STRONG
             </h2>
@@ -87,7 +94,7 @@
     <!-- End Landing -->
     <!-- Start About -->
     <section id="about" class="container mb-5">
-      <div class="row position-relative col fs-1 mb-5">
+      <div class="row position-relative col mb-5 fs-1 mb-5">
         <h2 class="text-center text-uppercase heading-style">who are we?</h2>
         <h3 class="text-center heading">about</h3>
       </div>
